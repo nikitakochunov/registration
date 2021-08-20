@@ -1,0 +1,102 @@
+@import "reset";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+$color: rgb(8, 44, 163);
+
+.form-block {
+    padding: 20px;
+    border: 1px solid rgba($color, 0.2);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    input {
+        height: 30px;
+        padding: 5px 0 5px 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        border: 1px solid rgba($color, 0.2);
+        border-radius: 3px;
+    }
+
+    button {
+        height: 35px;
+        font-size: 15px;
+        border: 1px solid rgba($color, 0.1);
+        border-radius: 3px;
+        color: #fff;
+        background-color: rgba($color, 0.8);
+        &:hover {
+            background-color: rgba($color, 0.6);
+        }
+        &.sign-up__button,
+        &.signing-up__button {
+            background-color: rgba(green, 0.8);
+            &:hover {
+                background-color: rgba(green, 0.6);
+            }
+        }
+    }
+}
+
+.first-page,
+.second-page {
+    padding: 100px 0 0 0;
+    height: 100vh;
+    transition: 0.5s all;
+}
+
+.sign-in {
+    &__form {
+    }
+
+    &__input {
+    }
+
+    &__button {
+    }
+}
+
+.sign-up {
+    padding: 30px 0 0 0;
+}
+
+.sign-up,
+.signing-up {
+    &__form {
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+
+    &__input {
+    }
+
+    &__button {
+    }
+}

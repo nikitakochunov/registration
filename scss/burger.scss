@@ -1,0 +1,63 @@
+// Burger Styles ===============================================================
+
+.burger {
+    @media (max-width: 767px) {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        &.active {
+            span {
+                transform: scale(0);
+                background-color: #fff;
+            }
+            &::before {
+                background-color: #fff;
+                transform: rotate(45deg);
+                top: 9px;
+            }
+
+            &::after {
+                background-color: #fff;
+                transform: rotate(-45deg);
+                bottom: 9px;
+            }
+        }
+
+        & span {
+            background-color: #4d4959;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 8px;
+            transition: 0.3s all;
+        }
+        &::before,
+        &::after {
+            content: "";
+            background-color: #4d4959;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: 0.3s all;
+        }
+        &::before {
+            top: 0px;
+        }
+        &::after {
+            bottom: 2px;
+        }
+    }
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+// =============================================================================

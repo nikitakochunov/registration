@@ -1,0 +1,11 @@
+.slick-slider {
+  position: relative;
+}
+
+.slick-slider .slick-list {
+  overflow: hidden;
+}
+
+.slick-slider .slick-track {
+  display: flex;
+}

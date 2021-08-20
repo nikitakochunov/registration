@@ -1,0 +1,24 @@
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+input:focus, input:active {
+  outline: none;
+}
